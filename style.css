@@ -1,11 +1,11 @@
 :root {
-  --bg: #0a0a0c;
-  --card: #151518;
-  --card-border: rgba(255,255,255,0.08);
+  --bg: #1a0c14;
+  --card: #2a1420;
+  --card-border: rgba(255,255,255,0.09);
   --text: #f5f5f4;
-  --muted: #a8a8ad;
-  --accent: #c9a24a;
-  --accent-2: #7b5cff;
+  --muted: #c9a3b5;
+  --accent: #ff6f9c;
+  --accent-2: #ff2e7e;
 }
 
 * { box-sizing: border-box; }
@@ -45,7 +45,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(10,10,12,0.75);
+  background: rgba(26,12,20,0.75);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--card-border);
 }
@@ -236,7 +236,7 @@ html, body {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .product-card:hover {
-  border-color: rgba(201,162,74,0.4);
+  border-color: rgba(255,111,156,0.4);
   transform: translateY(-2px);
 }
 
@@ -324,7 +324,7 @@ html, body {
   color: var(--accent);
   margin-top: 22px;
 }
-.btn-outline:hover { background: rgba(201,162,74,0.1); }
+.btn-outline:hover { background: rgba(255,111,156,0.1); }
 
 /* ---------- Links ---------- */
 
@@ -348,7 +348,7 @@ html, body {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .link-card:hover {
-  border-color: rgba(123,92,255,0.5);
+  border-color: rgba(255,46,126,0.5);
   transform: translateY(-2px);
 }
 
@@ -417,7 +417,7 @@ html, body {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .store-card:hover {
-  border-color: rgba(201,162,74,0.4);
+  border-color: rgba(255,111,156,0.4);
   transform: translateY(-3px);
 }
 
@@ -446,13 +446,13 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--accent);
-  border: 1px solid rgba(201,162,74,0.35);
+  border: 1px solid rgba(255,111,156,0.35);
   border-radius: 999px;
   padding: 3px 10px;
 }
 .store-tag--free {
   color: var(--accent-2);
-  border-color: rgba(123,92,255,0.4);
+  border-color: rgba(255,46,126,0.4);
 }
 
 .store-body h3 {
