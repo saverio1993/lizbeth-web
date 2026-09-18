@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda · Lizbeth Franco</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="glow glow-a"></div>
+<div class="glow glow-b"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">lizbeth franco</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="tienda.html" class="nav-link is-active">Tienda</a>
+    </div>
+    <button class="cart-toggle" id="cartToggle" aria-label="Ver cotización">
+      🛒 <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</nav>
+
+<main class="page page--store">
+
+  <header class="store-hero">
+    <h1>Tienda</h1>
+    <p>Explora todos mis servicios y agrega los que te interesen a tu cotización. El pago se coordina directo conmigo.</p>
+  </header>
+
+  <section class="section">
+    <div class="store-grid">
+
+      <article class="store-card">
+        <div class="store-media" style="background-image:url('https://cdn.beacons.ai/user_content/vxPQpvxBgiRGxR1pBmbyN9EXbPD3/referenced_images/a8e09bc3-b6b5-4bf4-b912-c88e26299369__store__product-image__a10a2d5f-854d-448f-a558-ca93242a03b6__fe196b52-6725-4733-90d5-098521932d2e.webp')"></div>
+        <div class="store-body">
+          <span class="store-tag">Asesoría</span>
+          <h3>Asesoría 1:1 <span class="pill-time">🕚 60 minutos</span></h3>
+          <p class="store-desc">Sesión personalizada de una hora para resolver tus dudas y armar un plan a tu medida.</p>
+          <div class="store-footer">
+            <p class="price price--lg">USD 57</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost add-cart" data-id="p1" data-name="Asesoría 1:1 (60 min)" data-price="57">+ Carrito</button>
+              <a class="btn btn-primary" href="https://shop.beacons.ai/lizbethf/a10a2d5f-854d-448f-a558-ca93242a03b6?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Flizbethf&show_back_button=true" target="_blank" rel="noopener">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <div class="store-media store-media--light" style="background-image:url('https://cdn.beacons.ai/user_content/vxPQpvxBgiRGxR1pBmbyN9EXbPD3/referenced_images/304280c2-f858-4128-8b8c-8311061d0332__store__product-image__101b0190-de48-47ac-9060-6d994c6ebeba__8a4e138f-aa49-4afc-8c04-56e1e427453d.webp')"></div>
+        <div class="store-body">
+          <span class="store-tag store-tag--free">Gratis</span>
+          <h3>Con Disciplina, Todo Se Puede</h3>
+          <p class="store-desc">Guía digital para construir hábitos y disciplina en tu día a día.</p>
+          <div class="store-footer">
+            <p class="price price--lg">USD 0</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost add-cart" data-id="p2" data-name="Con Disciplina, Todo Se Puede" data-price="0">+ Carrito</button>
+              <a class="btn btn-primary" href="https://shop.beacons.ai/lizbethf/101b0190-de48-47ac-9060-6d994c6ebeba?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Flizbethf&show_back_button=true" target="_blank" rel="noopener">Obtener gratis</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="store-card">
+        <div class="store-media store-media--light" style="background-image:url('https://cdn.beacons.ai/user_content/vxPQpvxBgiRGxR1pBmbyN9EXbPD3/referenced_images/c02c3406-657a-4ab4-8837-16af2ad31b76__store__product-image__478ad3b8-d00b-4714-95cf-7859d0820590__e1da4fba-92ae-41f4-b2a0-a95ab924d590.webp')"></div>
+        <div class="store-body">
+          <span class="store-tag">Academia</span>
+          <h3>Next Flight Academy</h3>
+          <p class="store-desc">Programa completo para prepararte y dar el siguiente salto en tu carrera.</p>
+          <div class="store-footer">
+            <p class="price price--lg">USD 697</p>
+            <div class="product-actions">
+              <button class="btn btn-ghost add-cart" data-id="p3" data-name="Next Flight Academy" data-price="697">+ Carrito</button>
+              <a class="btn btn-primary" href="https://shop.beacons.ai/lizbethf/478ad3b8-d00b-4714-95cf-7859d0820590?pageViewSource=lib_view&referrer=https%3A%2F%2Fbeacons.ai%2Flizbethf&show_back_button=true" target="_blank" rel="noopener">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Lizbeth Franco</p>
+  </footer>
+
+</main>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer-header">
+    <h3>Tu cotización</h3>
+    <button class="cart-close" id="cartClose" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total-row"><span>Total estimado</span><strong id="cartTotal">USD 0</strong></div>
+    <p class="cart-note">Esto es solo una cotización de referencia. Escríbeme por Instagram o WhatsApp para coordinar el pago y los detalles. 💬</p>
+  </div>
+</aside>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<script src="cart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
